@@ -1,8 +1,8 @@
 import { Search as SearchIcon } from "react-bootstrap-icons";
 import s from "./style.module.css";
 
-export function SearchBar({ onSubmit }) {
-  function submit(e) {
+export function SearchBar({ onSubmit }:any) {
+  function submit(e:any) {
     if (e.key === "Enter" && e.target.value.trim() !== "") {
       onSubmit(e.target.value)
    }
